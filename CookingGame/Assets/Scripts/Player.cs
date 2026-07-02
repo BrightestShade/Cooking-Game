@@ -9,13 +9,50 @@ public class Player : MonoBehaviour
     private bool isWalking;
     private Vector3 lastInteractDir;
 
+
+
+
+    private void Start()
+    {
+        gameInput.OnInteractAction += GameInput_OnInteractAction;
+    }
+
+    private void GameInput_OnInteractAction(object sender, System.EventArgs e)
+    {
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
+
+        Vector3 moveDir = new Vector3(inputVector.x, 0, inputVector.y);
+
+        if (moveDir != Vector3.zero)
+        {
+            lastInteractDir = moveDir;
+        }
+
+        float interactDistance = 2f;
+        if (Physics.Raycast(transform.position, lastInteractDir, out RaycastHit raycastHit, interactDistance, countersLayerMask))
+        {
+            if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
+            {
+                clearCounter.Interact();
+            }
+
+            /*Other way to check for clear counter 
+
+               clearCounter = clearCounter = raycastHit.transform.GetComponent<clearCounter>();
+               if (clearCounter != null)
+               {
+                   // has clear counter
+               }
+            */
+        }
+      
+    }
+
     private void Update()
     {
         HandleMovement();
         HandleInteractions();
     }
-
-
 
 
 
@@ -40,7 +77,7 @@ public class Player : MonoBehaviour
         {
              if (raycastHit.transform.TryGetComponent(out ClearCounter clearCounter))
              {
-                clearCounter.Interact();
+               // clearCounter.Interact();
              }
 
          /*Other way to check for clear counter 
@@ -54,7 +91,8 @@ public class Player : MonoBehaviour
         }
         else
         {
-            Debug.Log("-");
+          //  Debug.Log("-");
+
         }
 
 
