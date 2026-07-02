@@ -786,6 +786,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimations
   player: {fileID: 1642309654}
+--- !u!1 &1415232037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6745650857289217174, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+  m_PrefabInstance: {fileID: 2010176658}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1419778857
 GameObject:
   m_ObjectHideFlags: 3
@@ -943,6 +948,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ClearCounter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7428858818118119274, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+      propertyPath: visualGameObject
+      value: 
+      objectReference: {fileID: 1415232037}
     - target: {fileID: 8055680600704271721, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.691
