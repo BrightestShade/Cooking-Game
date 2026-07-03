@@ -531,6 +531,17 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &706988142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+  m_PrefabInstance: {fileID: 2010176658}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabd8454fda12cc439008afbd3326d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClearCounter
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,6 +591,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1225775691 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+  m_PrefabInstance: {fileID: 8945939947767166214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabd8454fda12cc439008afbd3326d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClearCounter
 --- !u!1 &1237717318
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,9 +967,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+      propertyPath: testing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
       propertyPath: kitchenObjectSO
       value: 
       objectReference: {fileID: 11400000, guid: 8dd10edf710cd8c47b692998d1b59943, type: 2}
+    - target: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 1225775691}
     - target: {fileID: 4901514440798961595, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
       propertyPath: m_Name
       value: ClearCounter (1)
@@ -1053,6 +1083,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7122711906730938480, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
+      propertyPath: secondClearCounter
+      value: 
+      objectReference: {fileID: 706988142}
     - target: {fileID: 4901514440798961595, guid: eebe669c10457ca4c960d9e1724d2c8c, type: 3}
       propertyPath: m_Name
       value: ClearCounter
