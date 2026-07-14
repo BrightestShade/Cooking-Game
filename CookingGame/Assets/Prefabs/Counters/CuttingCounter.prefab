@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4860457385454905563}
   - component: {fileID: 7898755167758319667}
   - component: {fileID: 3540280229567943030}
+  - component: {fileID: 305465552524552416}
   m_Layer: 5
   m_Name: ProgressBarUI
   m_TagString: Untagged
@@ -210,6 +211,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProgressBarUI
   cuttingCounter: {fileID: 8032026469253751409}
   barImage: {fileID: 6255352697964916262}
+--- !u!114 &305465552524552416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4302420231580023034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5a1a870a448cc4aa197f2597e251f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LookAtCamera
+  mode: 3
 --- !u!1 &4901514440798961595
 GameObject:
   m_ObjectHideFlags: 0
