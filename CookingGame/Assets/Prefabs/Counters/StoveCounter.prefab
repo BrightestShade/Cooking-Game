@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StoveCounter
   counterTopPoint: {fileID: 8808239151493187884}
+  fryingRecipeSOArray:
+  - {fileID: 11400000, guid: 3ad675c965c93e744a9b93f0b5a170fd, type: 2}
 --- !u!4 &8808239151493187884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6445141454530215781, guid: 891c898039101fa49bacc1dd9d89345b, type: 3}
@@ -223,7 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c25ff81236139e4faa0c7519480d8c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SelectedCounterVisual
-  baseCounter: {fileID: 0}
+  baseCounter: {fileID: 7932961657527437144}
   visualGameObjectArray:
   - {fileID: 347869272505668828}
   - {fileID: 9030432909743712034}
