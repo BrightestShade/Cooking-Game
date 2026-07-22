@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1784564914
+  lastShownTimestamp: 1784725596
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1784564914
+  checkedLastUpdateTimestamp: 1784725596
   lastQOTDResponse:
     questionId: 324
     questionText: What is JSON and what is it useful for?
@@ -27,7 +27,7 @@ MonoBehaviour:
     answerC: Jumping-Signal Over Nonce, crypto concept
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1784564914
+  lastQotdTimestamp: 1784725596
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
     topText: Get 80% OFF on ALL my Courses and Games!!!
@@ -35,11 +35,11 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1784564914
+  lastDynamicHeaderTimestamp: 1784725596
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1784564914
+  websiteLatestMessageTimestamp: 1784725596
   websiteLatestVideos:
     videos:
     - youTubeId: -qpKrATW4wM
@@ -50,4 +50,4 @@ MonoBehaviour:
       title: Do THIS to pick your next SUCCESSFUL game idea!
     - youTubeId: NjNbIHHu9Z0
       title: Steam Marketing EXPERT on how to find SUCCESS in 2026!
-  websiteLatestVideosTimestamp: 1784564914
+  websiteLatestVideosTimestamp: 1784725596
