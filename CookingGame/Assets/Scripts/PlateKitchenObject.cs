@@ -4,6 +4,12 @@ using System;
 
 public class PlateKitchenObject : KitchenObject
 {
+    public event EventHandler<OnIngredientAddedEventArgs> OnIngredientAdded;
+
+    public class OnIngredientAddedEventArgs : EventArgs
+    {
+        public KitchenObjectsSO kitchenObjectSO;
+    }
 
     [SerializeField] private List<KitchenObjectsSO> validKitchenObjectSOList;
 
@@ -18,21 +24,23 @@ public class PlateKitchenObject : KitchenObject
     {
         if (!validKitchenObjectSOList.Contains(kitchenObjectSO))
         {
-            //not a valid ingredient
+            // Not a valid ingredient
             return false;
         }
+
         if (kitchenObjectSOList.Contains(kitchenObjectSO))
         {
-           
+            // Already has this ingredient
             return false;
         }
-        else
-        {
-            kitchenObjectSOList.Add(kitchenObjectSO);
-            return true;
-        }
-
 
         kitchenObjectSOList.Add(kitchenObjectSO);
+
+        OnIngredientAdded?.Invoke(this, new OnIngredientAddedEventArgs
+        {
+            kitchenObjectSO = kitchenObjectSO
+        });
+
+        return true;
     }
 }
