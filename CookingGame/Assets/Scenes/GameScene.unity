@@ -3379,7 +3379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GamePauseUI
   resumeButton: {fileID: 555818534}
   mainMenuButton: {fileID: 1764867116}
-  optionsButton: {fileID: 0}
+  optionsButton: {fileID: 221506834}
 --- !u!1001 &729931753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6706,6 +6706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OptionsUI
   soundEffectsButton: {fileID: 1015934540}
   musicButton: {fileID: 1771930441}
+  closeButton: {fileID: 167425187}
   soundEffectsText: {fileID: 382329953}
   musicText: {fileID: 1344681450}
 --- !u!1001 &1886398995
