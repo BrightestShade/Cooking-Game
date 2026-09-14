@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenuUi : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class MainMenuUi : MonoBehaviour
 
     private void Awake()
     {
+        EventSystem.current.SetSelectedGameObject(playButton.gameObject);
         playButton.onClick.AddListener(() =>
         {
             Loader.Load(Loader.Scene.GameScene);
