@@ -23,7 +23,7 @@ public class KitchenGameManager : MonoBehaviour
     private float waitingToStartTimer = 1f;
     private float countdownToStartTimer = 3f;
     private float gamePlayingTimer;
-    private float gamePlayingTimerMax = 10f; // go back and check what this is for
+    private float gamePlayingTimerMax = 10f;
     private bool isGamePaused = false;
 
     private void Awake()
@@ -117,5 +117,10 @@ public class KitchenGameManager : MonoBehaviour
             OnGameUnpaused?.Invoke(this, EventArgs.Empty);
         }
 
+    }
+
+    public float GetGamePlayingTimerNormalized()
+    {
+        return 1 - (gamePlayingTimer / gamePlayingTimerMax);
     }
 }
