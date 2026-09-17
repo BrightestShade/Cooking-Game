@@ -14,25 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1789504263
+  lastShownTimestamp: 1789650130
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1789504263
+  checkedLastUpdateTimestamp: 1789650130
   lastQOTDResponse:
-    questionId: 342
-    questionText: 'What is the result of this code:
-
-      <p>int money = 2000000000;
-      // $2 billion</p>
-
-      <p>money += 1000000000; // Adding $1 billion</p>'
-    answerA: money == 3000000000
-    answerB: money == -1294967296
-    answerC: money == 0
-    answerD: 
+    questionId: 343
+    questionText: How many classes should your game have?
+    answerA: Less than 100
+    answerB: At least 100
+    answerC: As many as needed and no more
+    answerD: Just one
     answerE: 
-  lastQotdTimestamp: 1789504263
+  lastQotdTimestamp: 1789650130
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
     topText: My Toolkit is 50% OFF! 50+ Tools and Elements to help you make games
@@ -41,13 +36,15 @@ MonoBehaviour:
     bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab
       for FREE!
     bottomLink: practicelab
-  lastDynamicHeaderTimestamp: 1789504263
+  lastDynamicHeaderTimestamp: 1789650130
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1789504263
+  websiteLatestMessageTimestamp: 1789650130
   websiteLatestVideos:
     videos:
+    - youTubeId: ndlWuuOw_zo
+      title: Get 70% OFF AWESOME Assets this Autumn!
     - youTubeId: Wp9I5WhT2OE
       title: Every Game you make should make your NEXT Game Easier!
     - youTubeId: QNXgOuo7-Iw
@@ -55,6 +52,4 @@ MonoBehaviour:
     - youTubeId: xhOkkGbL3mY
       title: How to Make your game look AWESOME! (Unity Lighting and Post Processing
         Tutorial)
-    - youTubeId: HOm1VQLKhX8
-      title: Unity 6.6 is here and it has 3 MASSIVE IMPROVEMENTS!
-  websiteLatestVideosTimestamp: 1789504263
+  websiteLatestVideosTimestamp: 1789650130
