@@ -14,42 +14,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1789650130
+  lastShownTimestamp: 1791976326
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1789650130
+  checkedLastUpdateTimestamp: 1791976323
   lastQOTDResponse:
-    questionId: 343
-    questionText: How many classes should your game have?
-    answerA: Less than 100
-    answerB: At least 100
-    answerC: As many as needed and no more
-    answerD: Just one
+    questionId: 352
+    questionText: 'What is the position of the transform after running this code?
+
+      <p>Vector3
+      targetPosition = new Vector3(10, 0, 0);</p>
+
+      <p>transform.position =
+      targetPosition;</p>
+
+      <p>targetPosition.x = 20;</p>'
+    answerA: (10, 0, 0)
+    answerB: (20, 0, 0)
+    answerC: Unknown
+    answerD: 
     answerE: 
-  lastQotdTimestamp: 1789650130
+  lastQotdTimestamp: 1791976323
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
-    topText: My Toolkit is 50% OFF! 50+ Tools and Elements to help you make games
-      BETTER and FASTER!
-    topLink: toolkit
-    bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab
-      for FREE!
-    bottomLink: practicelab
-  lastDynamicHeaderTimestamp: 1789650130
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Synty.png
+    topText: AWESOME Synty Asset with THOUSANDS of great assets!
+    topLink: humblebundle
+    bottomText: My 10+ Years of C# Knowledge in 1 Course!
+    bottomLink: csharpcourse
+  lastDynamicHeaderTimestamp: 1791976323
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1789650130
+  websiteLatestMessageTimestamp: 1791976323
   websiteLatestVideos:
     videos:
-    - youTubeId: ndlWuuOw_zo
-      title: Get 70% OFF AWESOME Assets this Autumn!
-    - youTubeId: Wp9I5WhT2OE
-      title: Every Game you make should make your NEXT Game Easier!
-    - youTubeId: QNXgOuo7-Iw
-      title: TOP 10 FREE NEW Assets SEPTEMBER 2026!
-    - youTubeId: xhOkkGbL3mY
-      title: How to Make your game look AWESOME! (Unity Lighting and Post Processing
-        Tutorial)
-  websiteLatestVideosTimestamp: 1789650130
+    - youTubeId: OzldphY8pTs
+      title: THIS is why your game looks TERRIBLE!
+    - youTubeId: o4WEUv31JOc
+      title: If your code is HORRIBLE watch this!
+    - youTubeId: trDO2Io6D2M
+      title: What is Unity Spark?
+    - youTubeId: iwDBrvKliV8
+      title: You should do the Dual Prototyping Strategy!
+  websiteLatestVideosTimestamp: 1791976323
