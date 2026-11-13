@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 7180144997433896847}
   - component: {fileID: 5637359208981454370}
   - component: {fileID: 1081102797778181144}
+  - component: {fileID: 2495937943782077349}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -441,6 +442,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bac9c66599dad3b4a944ccd32cf10142, type: 2}
   - {fileID: 11400000, guid: 4185367dc5c1faa4990e2eaf77c71f52, type: 2}
   - {fileID: 11400000, guid: 45013e3a2358be241886250a6853ed5b, type: 2}
+--- !u!114 &2495937943782077349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416616294323579667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67b8786c8c3ac9428cc70e4bf3cc931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowTransform
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1001 &2362959717376963744
 PrefabInstance:
   m_ObjectHideFlags: 0

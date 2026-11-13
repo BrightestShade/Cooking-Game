@@ -7,13 +7,36 @@ public class KitchenObject : NetworkBehaviour
 
     private IKitchenObjectParent kitchenObjectParent;
 
+    private FollowTransform followTransform;
+
+    protected virtual void Awake()
+    {
+        followTransform = GetComponent<FollowTransform>();
+    }
+
     public KitchenObjectsSO GetKitchenObjectsSO()
     {
         return kitchenObjectSO;
     }
 
     public void SetKitchenObjectParent(IKitchenObjectParent kitchenObjectParent)
-    { if (this.kitchenObjectParent != null) 
+    {
+        SetKitchenObjectParentServerRpc(kitchenObjectParent.GetNetworkObject());
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void SetKitchenObjectParentServerRpc(NetworkObjectReference kitchenObjectParentNetworkObjectReference)
+    {
+        SetKitchenObjectParentClientRpc(kitchenObjectParentNetworkObjectReference);
+    }
+
+    [ClientRpc]
+    private void SetKitchenObjectParentClientRpc(NetworkObjectReference kitchenObjectParentNetworkObjectReference)
+    {
+        kitchenObjectParentNetworkObjectReference.TryGet(out NetworkObject kitchenObjectParentNetworkObject);
+        IKitchenObjectParent kitchenObjectParent = kitchenObjectParentNetworkObject.GetComponent<IKitchenObjectParent>();
+
+        if (this.kitchenObjectParent != null)
         {
             this.kitchenObjectParent.ClearKitchenObject();// This piece clears kitchen object from old kitchenObjectParent
         }
@@ -28,11 +51,9 @@ public class KitchenObject : NetworkBehaviour
 
         kitchenObjectParent.SetKitchenObject(this);
 
-       // transform.parent = kitchenObjectParent.GetKitchenObjectFollowTransform();
-      //  transform.localPosition = Vector3.zero; // updates the visual
+        followTransform.SetTargetTransform(kitchenObjectParent.GetKitchenObjectFollowTransform()); // replaces single player parenting logic.
+
     }
-
-
 
 
     public IKitchenObjectParent GetKitchenObjectParent()
@@ -43,8 +64,12 @@ public class KitchenObject : NetworkBehaviour
 
     public void DestroySelf()
     {
-        kitchenObjectParent.ClearKitchenObject();
         Destroy(gameObject);
+    }
+
+    public void ClearKitchenObjectOnParent()
+    {
+        kitchenObjectParent.ClearKitchenObject();
     }
 
     public bool TryGetPlate(out PlateKitchenObject plateKitchenObject)
@@ -65,6 +90,11 @@ public class KitchenObject : NetworkBehaviour
     public static void SpawnKitchenObject(KitchenObjectsSO kitchenObjectSO, IKitchenObjectParent kitchenObjectParent)
     {
         KitchenGameMultiplayer.Instance.SpawnKitchenObject(kitchenObjectSO, kitchenObjectParent);
+    }
+
+    public static void DestroyKitchenObject(KitchenObject kitchenObject)
+    {
+        KitchenGameMultiplayer.Instance.DestroyKitchenObject(kitchenObject);
     }
 
 }

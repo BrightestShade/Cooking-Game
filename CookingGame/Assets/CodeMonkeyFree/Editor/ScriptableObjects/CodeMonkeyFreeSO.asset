@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1794491348
+  lastShownTimestamp: 1794592423
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1794491348
+  checkedLastUpdateTimestamp: 1794592423
   lastQOTDResponse:
     questionId: 362
     questionText: 'When would this code cause an error?
@@ -46,7 +46,7 @@ MonoBehaviour:
     answerC: When instanceList has exactly two elements
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1794491348
+  lastQotdTimestamp: 1794592423
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyEndOfSummerBundleOct26.png
     topText: Back for a limited time until the END OF SUMMER, 80% OFF all my Courses
@@ -54,19 +54,19 @@ MonoBehaviour:
     topLink: summerbundle
     bottomText: FREE Game Dev Insights every week straight to your inbox!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1794491348
+  lastDynamicHeaderTimestamp: 1794592423
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1794491348
+  websiteLatestMessageTimestamp: 1794592423
   websiteLatestVideos:
     videos:
+    - youTubeId: WhWutMiW1lI
+      title: My 10th Steam game is out! Why am I both HAPPY and SAD?
     - youTubeId: dkIfY7svIpg
       title: TOP 10 NEW Games, Made with Unity! (OCTOBER 2026)
     - youTubeId: 6HsAEaBkpLg
       title: How a PRO builds a Weapon System!
     - youTubeId: HZjtgeSpmPU
       title: Does Unity CANCEL their features?
-    - youTubeId: uYqLWurQqy0
-      title: BEST NEW Visual Assets to INSPIRE YOU! (OCTOBER 2026)
-  websiteLatestVideosTimestamp: 1794491348
+  websiteLatestVideosTimestamp: 1794592423

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7180144997433896847}
   - component: {fileID: 4630147809811465449}
   - component: {fileID: -8946070220829781394}
+  - component: {fileID: 7543495225850217872}
   m_Layer: 0
   m_Name: CabbageSlices
   m_TagString: Untagged
@@ -75,6 +76,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::KitchenObject
   ShowTopMostFoldoutHeaderGroup: 1
   kitchenObjectSO: {fileID: 11400000, guid: 5089eed13566ec94ebecd2716605fb72, type: 2}
+--- !u!114 &7543495225850217872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416616294323579667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67b8786c8c3ac9428cc70e4bf3cc931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowTransform
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1001 &3666224241827285872
 PrefabInstance:
   m_ObjectHideFlags: 0
