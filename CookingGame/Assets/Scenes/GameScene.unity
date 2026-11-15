@@ -306,6 +306,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 740903722}
     m_Modifications:
+    - target: {fileID: -2549798694289378153, guid: c276d7dd2571ce34295fb65b8504e12c, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2549798694289378153, guid: c276d7dd2571ce34295fb65b8504e12c, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2356100218
+      objectReference: {fileID: 0}
+    - target: {fileID: -2549798694289378153, guid: c276d7dd2571ce34295fb65b8504e12c, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2549798694289378153, guid: c276d7dd2571ce34295fb65b8504e12c, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2961776629
+      objectReference: {fileID: 0}
     - target: {fileID: 4901514440798961595, guid: c276d7dd2571ce34295fb65b8504e12c, type: 3}
       propertyPath: m_Name
       value: TrashCounter
@@ -6338,6 +6354,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 740903722}
     m_Modifications:
+    - target: {fileID: -1781752537434322141, guid: 63d581a7b0cef354ea91fd7ead490cc4, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1781752537434322141, guid: 63d581a7b0cef354ea91fd7ead490cc4, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 3060501953
+      objectReference: {fileID: 0}
+    - target: {fileID: -1781752537434322141, guid: 63d581a7b0cef354ea91fd7ead490cc4, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1781752537434322141, guid: 63d581a7b0cef354ea91fd7ead490cc4, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 480727973
+      objectReference: {fileID: 0}
     - target: {fileID: 2804593962145001144, guid: 63d581a7b0cef354ea91fd7ead490cc4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9045,6 +9077,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 740903722}
     m_Modifications:
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 2508359036
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2215494950
+      objectReference: {fileID: 0}
     - target: {fileID: 4901514440798961595, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
       propertyPath: m_Name
       value: CuttingCounter
@@ -10402,6 +10450,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 740903722}
     m_Modifications:
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: m_InScenePlaced
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: GlobalObjectIdHash
+      value: 481980973
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: SceneMigrationSynchronization
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8909370926783439251, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
+      propertyPath: InScenePlacedSourceGlobalObjectIdHash
+      value: 2215494950
+      objectReference: {fileID: 0}
     - target: {fileID: 4901514440798961595, guid: 864aa3925f13d1949898fc86eee51ef5, type: 3}
       propertyPath: m_Name
       value: CuttingCounter (1)
