@@ -34,15 +34,19 @@ public class PlateKitchenObject : KitchenObject
             // Already has this ingredient
             return false;
         }
-
-        kitchenObjectSOList.Add(kitchenObjectSO);
-
-        OnIngredientAdded?.Invoke(this, new OnIngredientAddedEventArgs
+        else
         {
-            kitchenObjectSO = kitchenObjectSO
-        });
+            kitchenObjectSOList.Add(kitchenObjectSO);
 
-        return true;
+            OnIngredientAdded?.Invoke(this, new OnIngredientAddedEventArgs
+            {
+                kitchenObjectSO = kitchenObjectSO
+            });
+
+            return true;
+        }
+
+           
     }
 
 
