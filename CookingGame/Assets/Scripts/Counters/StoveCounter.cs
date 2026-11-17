@@ -136,7 +136,7 @@ public class StoveCounter : BaseCounter, IHasProgress
                     }
                     break;
                 case State.Burned:
-
+                    SetStateIdleServerRpc();
                     break;
             }
 
@@ -209,11 +209,23 @@ public class StoveCounter : BaseCounter, IHasProgress
 
         }
     }
-
     [ServerRpc(RequireOwnership = false)]
     private void SetStateIdleServerRpc()
     {
         state.Value = State.Idle;
+        fryingTimer.Value = 0f;
+        burningTimer.Value = 0f;
+
+        ResetProgressBarClientRpc();
+    }
+
+    [ClientRpc]
+    private void ResetProgressBarClientRpc()
+    {
+        OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+        {
+            progressNormalized = 0f
+        });
     }
 
     [ServerRpc(RequireOwnership = false)]
