@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.Netcode;
 public class GamePauseUI : MonoBehaviour
 {
 
@@ -17,7 +18,8 @@ public class GamePauseUI : MonoBehaviour
 
         mainMenuButton.onClick.AddListener(() =>
         {
-            Loader.Load(Loader.Scene.MenuScene);
+            NetworkManager.Singleton.Shutdown();
+            Loader.Load(Loader.Scene.MainMenuScene);
         });
 
         optionsButton.onClick.AddListener(() =>
