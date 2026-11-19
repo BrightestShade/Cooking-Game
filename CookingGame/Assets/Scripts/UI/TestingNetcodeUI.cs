@@ -13,7 +13,7 @@ public class TestingNetcodeUI : MonoBehaviour
         startHostButton.onClick.AddListener(() =>
         {
             Debug.Log("Starting Host");
-            NetworkManager.Singleton.StartHost();
+            KitchenGameMultiplayer.Instance.StartHost();
             Hide();
         });
 
@@ -21,7 +21,7 @@ public class TestingNetcodeUI : MonoBehaviour
         {
             Hide();
             Debug.Log("Starting Client");
-            NetworkManager.Singleton.StartClient();
+            KitchenGameMultiplayer.Instance.StartClient();
         });
     }
 

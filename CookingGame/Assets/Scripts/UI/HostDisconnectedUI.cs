@@ -1,33 +1,47 @@
+
 using UnityEngine;
 using UnityEngine.UI;
-using Unity.Netcode; 
+using Unity.Netcode;
 
 public class HostDisconnectedUI : MonoBehaviour
 {
     [SerializeField] private Button playAgainButton;
+    [SerializeField] private GameObject container;
 
     private void Start()
     {
-        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectedCallback;
+        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
+
         Hide();
     }
 
-    private void NetworkManager_OnClientDisconnectedCallback(ulong clientId)
+    private void OnDestroy()
     {
-        if(clientId == NetworkManager.ServerClientId)
+        if (NetworkManager.Singleton != null)
         {
-            // server is shutting down
+            NetworkManager.Singleton.OnClientDisconnectCallback -= NetworkManager_OnClientDisconnectCallback;
+        }
+    }
+
+    private void NetworkManager_OnClientDisconnectCallback(ulong clientId)
+    {
+        if (NetworkManager.Singleton == null)
+            return;
+
+        if (!NetworkManager.Singleton.IsServer &&
+            clientId == NetworkManager.Singleton.LocalClientId)
+        {
             Show();
         }
     }
 
     private void Show()
     {
-        gameObject.SetActive(true);
+        container.SetActive(true);
     }
 
     private void Hide()
     {
-        gameObject.SetActive(false);
+        container.SetActive(false);
     }
 }

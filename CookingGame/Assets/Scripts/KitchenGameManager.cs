@@ -56,7 +56,7 @@ public class KitchenGameManager : NetworkBehaviour
         state.OnValueChanged += State_OnValueChanged;
         isGamePaused.OnValueChanged += IsGamePaused_OnValueChanged;
 
-        if (IsServer)
+        if (IsServer) 
         {
             NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
         }
@@ -176,9 +176,14 @@ public class KitchenGameManager : NetworkBehaviour
         if (autoTestGamePausedState)
         {
             autoTestGamePausedState = false;
+
+            if (!IsServer || NetworkManager.Singleton == null || !NetworkManager.Singleton.IsListening)
+            {
+                return;
+            }
+
             TestGamePausedState();
         }
-
     }
 
     public bool IsGamePlaying()
@@ -202,6 +207,10 @@ public class KitchenGameManager : NetworkBehaviour
         return state.Value == State.GameOver;
     }
 
+    public bool IsWaitingToStart()
+    {
+        return state.Value == State.WaitingToStart;
+    }
     public bool IsLocalPlayerReady()
     {
         return isLocalPlayerReady;
@@ -247,15 +256,20 @@ public class KitchenGameManager : NetworkBehaviour
 
     private void TestGamePausedState()
     {
+        if (NetworkManager.Singleton == null || !NetworkManager.Singleton.IsListening)
+        {
+            return;
+        }
+
         foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
-            if(playerPausedDictionary.ContainsKey(clientId) && playerPausedDictionary[clientId])
+            if (playerPausedDictionary.ContainsKey(clientId) && playerPausedDictionary[clientId])
             {
                 isGamePaused.Value = true;
                 return;
             }
         }
+
         isGamePaused.Value = false;
-        // all players unpaused
     }
 }

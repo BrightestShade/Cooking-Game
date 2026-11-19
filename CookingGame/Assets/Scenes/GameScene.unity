@@ -13044,7 +13044,7 @@ MonoBehaviour:
       - {fileID: 11400000, guid: f4c8298055c33674daa90d5f73e60274, type: 2}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
-    ConnectionApproval: 0
+    ConnectionApproval: 1
     ConnectionData: 
     EnableTimeResync: 0
     TimeResyncInterval: 30
@@ -17364,6 +17364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HostDisconnectedUI
   playAgainButton: {fileID: 1967493761}
+  container: {fileID: 2124062288}
 --- !u!4 &2133853583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3950502091214380378, guid: bd3bd5308ef99e44daa4fc96a75b9650, type: 3}
