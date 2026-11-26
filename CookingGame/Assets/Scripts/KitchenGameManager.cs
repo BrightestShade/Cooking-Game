@@ -110,34 +110,31 @@ public class KitchenGameManager : NetworkBehaviour
             isLocalPlayerReady = true;
             OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
 
-           
-           // SetPlayerReadyServerRpc();
-
-          
+            SetPlayerReadyServerRpc();
         }
     }
 
-
- /*   [ServerRpc(RequireOwnership = false)]
+    [ServerRpc(RequireOwnership = false)]
     private void SetPlayerReadyServerRpc(ServerRpcParams serverRpcParams = default)
     {
+        if (state.Value != State.WaitingToStart)
+        {
+            return;
+        }
+
         playerReadyDictionary[serverRpcParams.Receive.SenderClientId] = true;
 
-        bool allClientsReady = true;
         foreach (ulong clientId in NetworkManager.Singleton.ConnectedClientsIds)
         {
-            if (!playerReadyDictionary.ContainsKey(clientId) || !playerReadyDictionary[clientId])
+            if (!playerReadyDictionary.ContainsKey(clientId) ||
+                !playerReadyDictionary[clientId])
             {
-                allClientsReady = false;
-                break;
+                return;
             }
         }
 
-        if (allClientsReady)
-        {
-            Loader.LoadNetwork(Loader.Scene.GameScene);
-        }
-    }*/
+        state.Value = State.CountDownToStart;
+    }
 
     private void GameInput_OnPauseAction(object sender, EventArgs e)
     {
