@@ -111,14 +111,14 @@ public class KitchenGameManager : NetworkBehaviour
             OnLocalPlayerReadyChanged?.Invoke(this, EventArgs.Empty);
 
            
-            SetPlayerReadyServerRpc();
+           // SetPlayerReadyServerRpc();
 
           
         }
     }
 
 
-    [ServerRpc(RequireOwnership = false)]
+ /*   [ServerRpc(RequireOwnership = false)]
     private void SetPlayerReadyServerRpc(ServerRpcParams serverRpcParams = default)
     {
         playerReadyDictionary[serverRpcParams.Receive.SenderClientId] = true;
@@ -137,7 +137,7 @@ public class KitchenGameManager : NetworkBehaviour
         {
             Loader.LoadNetwork(Loader.Scene.GameScene);
         }
-    }
+    }*/
 
     private void GameInput_OnPauseAction(object sender, EventArgs e)
     {
